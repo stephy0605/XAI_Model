@@ -1,0 +1,35 @@
+# === Jupyter & Notebook Tools ===
+jupyter
+
+# === Data Science Stack ===
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn==1.2.2  # Ensures compatibility with ConfusionMatrixDisplay
+
+# === NLP & Text Analysis ===
+wordcloud
+textblob
+textstat
+nltk
+spacy
+regex  # Needed for advanced regex (optional but recommended)
+
+# === Explainable AI ===
+shap
+lime
+plotly
+
+# === Transformers & Tokenizers ===
+transformers
+
+# === Deep Learning ===
+
+Tensorflow == 2.17.0
+Keras == 3.9.2      
+torch==2.2.2+cpu
+torchvision              # Optional, but often needed for PyTorch pipelines
+
+--extra-index-url https://download.pytorch.org/whl/cpu
+
