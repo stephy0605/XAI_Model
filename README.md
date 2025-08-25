@@ -16,11 +16,11 @@ Full Lifecycle Implementation: The project follows a complete research-to-soluti
 ## Quick Start
 
 ### 1) System Requirements and Tool stack 
-• OS: Windows 10/11, macOS 12+, or Ubuntu 20.04+
-• Software: Python 3.8+ (recommended 3.10)  and Jupyter Notebook or Google Collab pro+.
-• CPU RAM: 16 GB (min), 32 GB (recommended)
-• Disk: 10 GB free
-• GPU (optional): NVIDIA GPU with CUDA 11.8+ for BERT training/inference
+- OS: Windows 10/11, macOS 12+, or Ubuntu 20.04+
+- Software: Python 3.8+ (recommended 3.10)  and Jupyter Notebook or Google Collab pro+.
+- CPU RAM: 16 GB (min), 32 GB (recommended)
+- Disk: 10 GB free
+- GPU (optional): NVIDIA GPU with CUDA 11.8+ for BERT training/inference
 
  A modern CPU is sufficient for the traditional models. A GPU is highly recommended for faster training of the deep learning (CNN-BiGRU) model.
 
@@ -36,15 +36,13 @@ Note: Depending on your specific environment and GPU setup, you may need to inst
 
 ### 4) Project Structure
 XAI_Model/
-│── data/               # Raw datasets (SpamAssasin.csv, CEAS_08.csv)Place this CSV datasets where the notebooks expect them and adjust paths at the top of each notebook
-│── model/              # Saved models (cnn_bigru.h5)
-│── notebooks/          # Jupyter notebooks for experiments
-│── requirements.txt    # Python dependencies to import
+- data/            Raw datasets (SpamAssasin.csv, CEAS_08.csv)Place this CSV datasets where the notebooks expect them and adjust paths at the top of each notebook
+- model/           Saved models (cnn_bigru.h5)
+- notebooks/       Jupyter notebooks for experiments
+- requirements.txt Python dependencies to import
 
 ### 5) Data
 Place your CSV datasets where the notebooks expect them (adjust paths at the top of each notebook if needed). Typical setup:
-
-
 data/
   SpamAssasin.csv
   CEAS_08.csv
@@ -55,9 +53,12 @@ data/
 - Open each `.ipynb` by below order in Jupyter or Colab and execute all cells from top to bottom.
 
   **1. EDA.ipynb**: Jupyter notebook for exploratory data analysis.
+  
   **2. lr, xgb, rf** - phishing email detection.ipynb: Notebook for data preprocessing, feature engineering, and traditional ML model training/evaluation.
+  
   **3. CNN-BiGRU.ipynb** :Notebook for the deep learning model (CNN-BiGRU) implementation with explainable AI techniques(SHAP, LIME) and evaluation.
-  **4. xplainable BERT for phishing email detection.ipynb**: Notebook that implements a BERT-based phishing email detection model with explainable AI techniques to interpret and visualize the model’s predictions. 
+  
+  **4. xplainable BERT for phishing email detection.ipynb**: Notebook that implements a BERT-based phishing email detection model with explainable AI techniques to interpret and visualize the model’s predictions. -- need GPU or colab to run this 
 
 
 - Each notebook is segmented with clear sections: **Data Loading → Preprocessing → Modeling → Evaluation → Explainability**.
