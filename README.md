@@ -27,42 +27,42 @@ Full Lifecycle Implementation: The project follows a complete research-to-soluti
 ### 2) Installation and Setup for Environment
 This project requires a Python environment. The notebooks are designed to run in a Jupyter or Colaboratory environment.
 
-#### Dependencies
+### 3) Dependencies
 You can install all required libraries using the provided requirements.txt file (if applicable) or by running the following command in your terminal:
 
 pip install pandas scikit-learn tensorflow keras numpy matplotlib seaborn wordcloud
 
 Note: Depending on your specific environment and GPU setup, you may need to install tensorflow-gpu and corresponding CUDA/cuDNN drivers.
 
-### 3) Project Structure
+### 4) Project Structure
 XAI_Model/
 │── data/               # Raw datasets (SpamAssasin.csv, CEAS_08.csv)Place this CSV datasets where the notebooks expect them and adjust paths at the top of each notebook
 │── model/              # Saved models (cnn_bigru.h5)
 │── notebooks/          # Jupyter notebooks for experiments
 │── requirements.txt    # Python dependencies to import
 
-### 4) Data
+### 5) Data
 Place your CSV datasets where the notebooks expect them (adjust paths at the top of each notebook if needed). Typical setup:
 
-```
+
 data/
   SpamAssasin.csv
   CEAS_08.csv
 
 
-### 5) Running the Notebooks
+### 6) Running the Notebooks
  
 - Open each `.ipynb` by below order in Jupyter or Colab and execute all cells from top to bottom.
 
   **1. EDA.ipynb**: Jupyter notebook for exploratory data analysis.
   **2. lr, xgb, rf** - phishing email detection.ipynb: Notebook for data preprocessing, feature engineering, and traditional ML model training/evaluation.
-  **3. CNN-BiGRU.ipynb** :Notebook for the deep learning model (CNN-BiGRU) implementation and evaluation.
-  **4. xplainable BERT** for phishing email detection.ipynb: Notebook that implements a BERT-based phishing email detection model with explainable AI techniques to interpret and visualize the model’s predictions. 
+  **3. CNN-BiGRU.ipynb** :Notebook for the deep learning model (CNN-BiGRU) implementation with explainable AI techniques(SHAP, LIME) and evaluation.
+  **4. xplainable BERT for phishing email detection.ipynb**: Notebook that implements a BERT-based phishing email detection model with explainable AI techniques to interpret and visualize the model’s predictions. 
 
 
 - Each notebook is segmented with clear sections: **Data Loading → Preprocessing → Modeling → Evaluation → Explainability**.
 
-### 5) Troubleshooting
+### 7) Troubleshooting
 1.	Module Not Found Error: This means a required library is not installed. Make sure 
 you ran the pip install command successfully.
 
@@ -78,8 +78,3 @@ Conclusion
 
 #### Make sure to run the code sequentially, do not run in blocks, train the model first, then run 
 it. Better to use Jupyter with a good GPU and V-ram
-
-
-
-
-
