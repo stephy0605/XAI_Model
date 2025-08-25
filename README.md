@@ -36,10 +36,10 @@ Note: Depending on your specific environment and GPU setup, you may need to inst
 
 ### 4) Project Structure
 XAI_Model/
-- data/            Raw datasets (SpamAssasin.csv, CEAS_08.csv)Place this CSV datasets where the notebooks expect them and adjust paths at the top of each notebook
-- model/           Saved models (cnn_bigru.h5)
-- notebooks/       Jupyter notebooks for experiments
-- requirements.txt Python dependencies to import
+- **data/:** Raw datasets (SpamAssasin.csv, CEAS_08.csv)Place this CSV datasets where the notebooks expect them and adjust paths at the top of each notebook
+- **model/:**  Saved models (cnn_bigru.h5)
+- **notebooks/:** Jupyter notebooks for experiments
+- **requirements.txt:** Python dependencies to import
 
 ### 5) Data
 Place your CSV datasets where the notebooks expect them (adjust paths at the top of each notebook if needed). Typical setup:
